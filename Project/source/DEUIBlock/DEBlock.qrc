@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Icon">
+        <file>Icon/Required.png</file>
+        <file>Icon/SatisFied.png</file>
+        <file>Icon/SelectObject.png</file>
+        <file>Icon/Bottom.png</file>
+        <file>Icon/Top.png</file>
+    </qresource>
+</RCC>

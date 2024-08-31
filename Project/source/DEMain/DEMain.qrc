@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/Icon">
+        <file>Icon/FileNew.png</file>
+        <file>Icon/FileOpen.png</file>
+        <file>Icon/FileSave.png</file>
+        <file>Icon/FileSaveAs.png</file>
+        <file>Icon/Welcome.png</file>
+        <file>Icon/DE.png</file>
+        <file>Icon/OpenedFolder.png</file>
+        <file>Icon/TreeTable/branch-closed.png</file>
+        <file>Icon/TreeTable/branch-end.png</file>
+        <file>Icon/TreeTable/branch-more.png</file>
+        <file>Icon/TreeTable/branch-open.png</file>
+        <file>Icon/TreeTable/vline.png</file>
+        <file>Icon/Exit.png</file>
+        <file>Icon/BlockMoveDown.png</file>
+        <file>Icon/BlockMoveUp.png</file>
+        <file>Icon/DeleteBlock.png</file>
+    </qresource>
+</RCC>

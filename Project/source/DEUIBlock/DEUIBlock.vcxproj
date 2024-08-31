@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9BAAC839-3EC5-342D-9919-9A159721A627}</ProjectGuid>
+    <RootNamespace>DEUIBlock</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>..\..\out\windows_msvc_x64_release_qmake\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>DEUIBlock</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>..\..\out\windows_msvc_x64_debug_qmake\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>DEUIBlock</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\out\windows_msvc_x64_release_qmake\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">DEUIBlock</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\out\windows_msvc_x64_debug_qmake\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">DEUIBlock</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\include;..\..\include\DEPart;..\..\include\DEUIBlock;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;release;/include;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DEUIBLOCK_LIBRARY;QT_DEPRECATED_WARNINGS;_WINDOWS_SOURCE;NDEBUG;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>DERoot.lib;DEPart.lib;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Gui.lib;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\out\windows_msvc_x64_release_qmake;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)\DEUIBlock.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DEUIBLOCK_LIBRARY;QT_DEPRECATED_WARNINGS;_WINDOWS_SOURCE;NDEBUG;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\include;..\..\include\DEPart;..\..\include\DEUIBlock;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtWidgets;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtGui;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtANGLE;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\include\QtCore;debug;/include;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DEUIBLOCK_LIBRARY;QT_DEPRECATED_WARNINGS;_WINDOWS_SOURCE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>DERoot.lib;DEPart.lib;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Guid.lib;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\out\windows_msvc_x64_debug_qmake;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)\DEUIBlock.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;_ENABLE_EXTENDED_ALIGNED_STORAGE;WIN64;DEUIBLOCK_LIBRARY;QT_DEPRECATED_WARNINGS;_WINDOWS_SOURCE;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DEBlockAngularDimension.cpp" />
+    <ClCompile Include="DEBlockBasicBase.cpp" />
+    <ClCompile Include="DEBlockButton.cpp" />
+    <ClCompile Include="DEBlockCommon.cpp" />
+    <ClCompile Include="DEBlockDimension.cpp" />
+    <ClCompile Include="DEBlockDouble.cpp" />
+    <ClCompile Include="DEBlockEnumeration.cpp" />
+    <ClCompile Include="DEBlockGroup.cpp" />
+    <ClCompile Include="DEBlockInt.cpp" />
+    <ClCompile Include="DEBlockLabel.cpp" />
+    <ClCompile Include="DEBlockLayoutBase.cpp" />
+    <ClCompile Include="DEBlockLinearDimension.cpp" />
+    <ClCompile Include="DEBlockNumBase.cpp" />
+    <ClCompile Include="DEBlockObject.cpp" />
+    <ClCompile Include="DEBlockRadiusDimension.cpp" />
+    <ClCompile Include="DEBlockSelectBase.cpp" />
+    <ClCompile Include="DEBlockToggle.cpp" />
+    <ClCompile Include="DECtrlLineEdit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockAngularDimension.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockBasicBase.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockButton.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockCommon.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockDimension.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockDouble.h" />
+    <CustomBuild Include="..\..\include\DEUIBlock\DEBlockEnumeration.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\include\DEUIBlock\DEBlockEnumeration.h;release\moc_predefs.h;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DDEUIBLOCK_LIBRARY -DQT_DEPRECATED_WARNINGS -D_WINDOWS_SOURCE -DNDEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/C++/Qt/DialogEditor/Project/source/DEUIBlock/release/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/C++/Qt/DialogEditor/Project/source/DEUIBlock -IC:/C++/Qt/DialogEditor/Project/include -IC:/C++/Qt/DialogEditor/Project/include/DEPart -IC:/C++/Qt/DialogEditor/Project/include/DEUIBlock -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -IC:\VS2019\VC\Tools\MSVC\14.29.30133\ATLMFC\include -IC:\VS2019\VC\Tools\MSVC\14.29.30133\include -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; ..\..\include\DEUIBlock\DEBlockEnumeration.h -o release\moc_DEBlockEnumeration.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../../include/DEUIBlock/DEBlockEnumeration.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_DEBlockEnumeration.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\include\DEUIBlock\DEBlockEnumeration.h;debug\moc_predefs.h;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DDEUIBLOCK_LIBRARY -DQT_DEPRECATED_WARNINGS -D_WINDOWS_SOURCE -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/C++/Qt/DialogEditor/Project/source/DEUIBlock/debug/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/C++/Qt/DialogEditor/Project/source/DEUIBlock -IC:/C++/Qt/DialogEditor/Project/include -IC:/C++/Qt/DialogEditor/Project/include/DEPart -IC:/C++/Qt/DialogEditor/Project/include/DEUIBlock -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -IC:\VS2019\VC\Tools\MSVC\14.29.30133\ATLMFC\include -IC:\VS2019\VC\Tools\MSVC\14.29.30133\include -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; ..\..\include\DEUIBlock\DEBlockEnumeration.h -o debug\moc_DEBlockEnumeration.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../../include/DEUIBlock/DEBlockEnumeration.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_DEBlockEnumeration.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockGroup.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockInt.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockLabel.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockLayoutBase.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockLinearDimension.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockNumBase.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockObject.h" />
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockRadiusDimension.h" />
+    <CustomBuild Include="..\..\include\DEUIBlock\DEBlockSelectBase.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\include\DEUIBlock\DEBlockSelectBase.h;release\moc_predefs.h;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DDEUIBLOCK_LIBRARY -DQT_DEPRECATED_WARNINGS -D_WINDOWS_SOURCE -DNDEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/C++/Qt/DialogEditor/Project/source/DEUIBlock/release/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/C++/Qt/DialogEditor/Project/source/DEUIBlock -IC:/C++/Qt/DialogEditor/Project/include -IC:/C++/Qt/DialogEditor/Project/include/DEPart -IC:/C++/Qt/DialogEditor/Project/include/DEUIBlock -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -IC:\VS2019\VC\Tools\MSVC\14.29.30133\ATLMFC\include -IC:\VS2019\VC\Tools\MSVC\14.29.30133\include -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; ..\..\include\DEUIBlock\DEBlockSelectBase.h -o release\moc_DEBlockSelectBase.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC ../../include/DEUIBlock/DEBlockSelectBase.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_DEBlockSelectBase.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\include\DEUIBlock\DEBlockSelectBase.h;debug\moc_predefs.h;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DDEUIBLOCK_LIBRARY -DQT_DEPRECATED_WARNINGS -D_WINDOWS_SOURCE -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/C++/Qt/DialogEditor/Project/source/DEUIBlock/debug/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/C++/Qt/DialogEditor/Project/source/DEUIBlock -IC:/C++/Qt/DialogEditor/Project/include -IC:/C++/Qt/DialogEditor/Project/include/DEPart -IC:/C++/Qt/DialogEditor/Project/include/DEUIBlock -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -IC:\VS2019\VC\Tools\MSVC\14.29.30133\ATLMFC\include -IC:\VS2019\VC\Tools\MSVC\14.29.30133\include -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; ..\..\include\DEUIBlock\DEBlockSelectBase.h -o debug\moc_DEBlockSelectBase.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC ../../include/DEUIBlock/DEBlockSelectBase.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_DEBlockSelectBase.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\DEUIBlock\DEBlockToggle.h" />
+    <CustomBuild Include="DECtrlLineEdit.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">DECtrlLineEdit.h;release\moc_predefs.h;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DDEUIBLOCK_LIBRARY -DQT_DEPRECATED_WARNINGS -D_WINDOWS_SOURCE -DNDEBUG -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/C++/Qt/DialogEditor/Project/source/DEUIBlock/release/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/C++/Qt/DialogEditor/Project/source/DEUIBlock -IC:/C++/Qt/DialogEditor/Project/include -IC:/C++/Qt/DialogEditor/Project/include/DEPart -IC:/C++/Qt/DialogEditor/Project/include/DEUIBlock -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -IC:\VS2019\VC\Tools\MSVC\14.29.30133\ATLMFC\include -IC:\VS2019\VC\Tools\MSVC\14.29.30133\include -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; DECtrlLineEdit.h -o release\moc_DECtrlLineEdit.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC DECtrlLineEdit.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_DECtrlLineEdit.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">DECtrlLineEdit.h;debug\moc_predefs.h;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -DWIN64 -DDEUIBLOCK_LIBRARY -DQT_DEPRECATED_WARNINGS -D_WINDOWS_SOURCE -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include C:/C++/Qt/DialogEditor/Project/source/DEUIBlock/debug/moc_predefs.h -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/mkspecs/win32-msvc -IC:/C++/Qt/DialogEditor/Project/source/DEUIBlock -IC:/C++/Qt/DialogEditor/Project/include -IC:/C++/Qt/DialogEditor/Project/include/DEPart -IC:/C++/Qt/DialogEditor/Project/include/DEUIBlock -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtWidgets -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtGui -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtANGLE -IC:/Qt/Qt5.14.2/5.14.2/msvc2017_64/include/QtCore -IC:\VS2019\VC\Tools\MSVC\14.29.30133\ATLMFC\include -IC:\VS2019\VC\Tools\MSVC\14.29.30133\include -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt&quot; -I&quot;C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt&quot; DECtrlLineEdit.h -o debug\moc_DECtrlLineEdit.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC DECtrlLineEdit.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_DECtrlLineEdit.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\DEUIBlock\DEUIBlock_global.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_DEBlockEnumeration.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_DEBlockEnumeration.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_DEBlockSelectBase.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_DEBlockSelectBase.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_DECtrlLineEdit.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_DECtrlLineEdit.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -BxC:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -Zi -MDd -std:c++14 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -BxC:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zc:__cplusplus -O2 -MD -std:c++14 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\qrc_DEBlock.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_DEBlock.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon\Bottom.png" />
+    <CustomBuild Include="DEBlock.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">DEBlock.qrc;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe;Icon\SelectObject.png;Icon\SatisFied.png;Icon\Bottom.png;Icon\Required.png;Icon\Top.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe -name DEBlock DEBlock.qrc -o release\qrc_DEBlock.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC DEBlock.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_DEBlock.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">DEBlock.qrc;C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe;Icon\SelectObject.png;Icon\SatisFied.png;Icon\Bottom.png;Icon\Required.png;Icon\Top.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.14.2\5.14.2\msvc2017_64\bin\rcc.exe -name DEBlock DEBlock.qrc -o debug\qrc_DEBlock.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC DEBlock.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_DEBlock.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="Icon\Required.png" />
+    <None Include="Icon\SatisFied.png" />
+    <None Include="Icon\SelectObject.png" />
+    <None Include="Icon\Top.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

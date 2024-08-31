@@ -1,0 +1,50 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DEMain", "C:/C++/Qt/DialogEditor/Project/source/DEMain\DEMain.vcxproj", "{DC6EA6EC-3DBA-3E2B-9763-1DBCF4DEBB42}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD3EBF41-C078-3BBD-8A32-82B5EBDF7466} = {BD3EBF41-C078-3BBD-8A32-82B5EBDF7466}
+		{84B4974C-7845-386E-B0B0-BC1E3BFF5D28} = {84B4974C-7845-386E-B0B0-BC1E3BFF5D28}
+		{9BAAC839-3EC5-342D-9919-9A159721A627} = {9BAAC839-3EC5-342D-9919-9A159721A627}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DEPart", "C:/C++/Qt/DialogEditor/Project/source/DEPart\DEPart.vcxproj", "{84B4974C-7845-386E-B0B0-BC1E3BFF5D28}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD3EBF41-C078-3BBD-8A32-82B5EBDF7466} = {BD3EBF41-C078-3BBD-8A32-82B5EBDF7466}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DERoot", "C:/C++/Qt/DialogEditor/Project/source/DERoot\DERoot.vcxproj", "{BD3EBF41-C078-3BBD-8A32-82B5EBDF7466}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DEUIBlock", "C:/C++/Qt/DialogEditor/Project/source/DEUIBlock\DEUIBlock.vcxproj", "{9BAAC839-3EC5-342D-9919-9A159721A627}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD3EBF41-C078-3BBD-8A32-82B5EBDF7466} = {BD3EBF41-C078-3BBD-8A32-82B5EBDF7466}
+		{84B4974C-7845-386E-B0B0-BC1E3BFF5D28} = {84B4974C-7845-386E-B0B0-BC1E3BFF5D28}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC6EA6EC-3DBA-3E2B-9763-1DBCF4DEBB42}.Debug|x64.ActiveCfg = Debug|x64
+		{DC6EA6EC-3DBA-3E2B-9763-1DBCF4DEBB42}.Debug|x64.Build.0 = Debug|x64
+		{DC6EA6EC-3DBA-3E2B-9763-1DBCF4DEBB42}.Release|x64.ActiveCfg = Release|x64
+		{DC6EA6EC-3DBA-3E2B-9763-1DBCF4DEBB42}.Release|x64.Build.0 = Release|x64
+		{84B4974C-7845-386E-B0B0-BC1E3BFF5D28}.Debug|x64.ActiveCfg = Debug|x64
+		{84B4974C-7845-386E-B0B0-BC1E3BFF5D28}.Debug|x64.Build.0 = Debug|x64
+		{84B4974C-7845-386E-B0B0-BC1E3BFF5D28}.Release|x64.ActiveCfg = Release|x64
+		{84B4974C-7845-386E-B0B0-BC1E3BFF5D28}.Release|x64.Build.0 = Release|x64
+		{BD3EBF41-C078-3BBD-8A32-82B5EBDF7466}.Debug|x64.ActiveCfg = Debug|x64
+		{BD3EBF41-C078-3BBD-8A32-82B5EBDF7466}.Debug|x64.Build.0 = Debug|x64
+		{BD3EBF41-C078-3BBD-8A32-82B5EBDF7466}.Release|x64.ActiveCfg = Release|x64
+		{BD3EBF41-C078-3BBD-8A32-82B5EBDF7466}.Release|x64.Build.0 = Release|x64
+		{9BAAC839-3EC5-342D-9919-9A159721A627}.Debug|x64.ActiveCfg = Debug|x64
+		{9BAAC839-3EC5-342D-9919-9A159721A627}.Debug|x64.Build.0 = Debug|x64
+		{9BAAC839-3EC5-342D-9919-9A159721A627}.Release|x64.ActiveCfg = Release|x64
+		{9BAAC839-3EC5-342D-9919-9A159721A627}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
